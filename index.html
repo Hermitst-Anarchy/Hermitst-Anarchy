@@ -13,8 +13,8 @@
     <div class="hero-content">
       <h1>Welcome to Hermitst-Anarchy</h1>
       <p>The Ultimate Gaming & Community Hub</p>
-      <!-- Join button that links to the "Follow Us" section -->
-      <a href="#follow-us" class="btn">Join the Community</a>
+      <!-- Join button with an ID for JS reference -->
+      <a href="#follow-us" id="join-community" class="btn">Join the Community</a>
     </div>
   </header>
 
@@ -46,6 +46,16 @@
       <li><a href="https://www.youtube.com/channel/UC65cZF9S9pLzr5Apnt3jd7A" target="_blank">YouTube</a></li>
     </ul>
   </footer>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.getElementById("join-community").addEventListener("click", function(e) {
+      e.preventDefault();  // Prevent default anchor behavior
+      document.querySelector("#follow-us").scrollIntoView({
+        behavior: "smooth"  // Smooth scroll
+      });
+    });
+  </script>
 
 </body>
 </html>
