@@ -17,15 +17,15 @@ body {
 
 /* Hero Section Styling */
 .hero {
-  background: #333;
-  color: white;
+  background-color: #333 !important; /* Added specificity */
+  color: white !important;
   padding: 50px;
   text-align: center;
 }
 
 .hero .btn {
-  background: #f1c40f;
-  color: black;
+  background-color: #f1c40f !important;
+  color: black !important;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 18px;
@@ -34,7 +34,7 @@ body {
 }
 
 .hero .btn:hover {
-  background-color: #e67e22;
+  background-color: #e67e22 !important;
 }
 
 /* About Section Styling */
@@ -80,8 +80,8 @@ body {
 /* Footer Styling */
 footer {
   padding: 30px;
-  background-color: #333;
-  color: white;
+  background-color: #333 !important;
+  color: white !important;
   text-align: center;
 }
 
@@ -100,7 +100,7 @@ footer ul li {
 }
 
 footer ul li a {
-  color: white;
+  color: white !important;
   text-decoration: none;
   font-size: 18px;
 }
